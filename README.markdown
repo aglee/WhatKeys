@@ -57,8 +57,8 @@ Cocoa patterns and techniques are same as in Hotness, plus:
 
 Here are links for the source:
 
-* [Hotness](http://notesfromandy.com/stufftoshare/Hotness-1.0.zip)
-* [WhatKeys](http://notesfromandy.com/stufftoshare/WhatKeys-1.0.zip)
+* [Hotness](https://github.com/aglee/Hotness)
+* [WhatKeys](https://github.com/aglee/WhatKeys)
 
 To compile the example code you'll need Apple's Developer Tools, which you can get for free [here](http://developer.apple.com/) (requires registration).  After installing the Dev Tools, double-click an xcodeproj file to open the project in Xcode.
 
