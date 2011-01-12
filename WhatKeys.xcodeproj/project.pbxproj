@@ -23,7 +23,6 @@
 		7362FAE811E424C0002902E1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7362FAE711E424C0002902E1 /* Carbon.framework */; };
 		7382B28711F417E600057BB6 /* ListEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7382B28311F417E600057BB6 /* ListEditorView.xib */; };
 		7382B28811F417E600057BB6 /* ListEditorWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7382B28511F417E600057BB6 /* ListEditorWindow.xib */; };
-		73B0452F1205F23300CBB84F /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 73B0452E1205F23300CBB84F /* README.markdown */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -224,7 +223,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhatKeys" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* WhatKeys */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,7 +251,6 @@
 				7362FADC11E41FA4002902E1 /* LICENSE.txt in Resources */,
 				7382B28711F417E600057BB6 /* ListEditorView.xib in Resources */,
 				7382B28811F417E600057BB6 /* ListEditorWindow.xib in Resources */,
-				73B0452F1205F23300CBB84F /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
