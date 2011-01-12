@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WhatKeys' target in the 'WhatKeys' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

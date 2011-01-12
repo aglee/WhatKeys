@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* WhatKeysAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* WhatKeysAppDelegate.m */; };
+		7362FAA811E41BC6002902E1 /* WKHotKeyAssignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAA711E41BC6002902E1 /* WKHotKeyAssignment.m */; };
+		7362FAB411E41DA1002902E1 /* WKListEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAB311E41DA1002902E1 /* WKListEditorViewController.m */; };
+		7362FACE11E41F9E002902E1 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FACC11E41F9E002902E1 /* DDHotKeyCenter.m */; };
+		7362FACF11E41F9E002902E1 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 7362FACD11E41F9E002902E1 /* README.markdown */; };
+		7362FADC11E41FA4002902E1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7362FAD111E41FA4002902E1 /* LICENSE.txt */; };
+		7362FADD11E41FA4002902E1 /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAD311E41FA4002902E1 /* SRCommon.m */; };
+		7362FADE11E41FA4002902E1 /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAD511E41FA4002902E1 /* SRKeyCodeTransformer.m */; };
+		7362FADF11E41FA4002902E1 /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAD711E41FA4002902E1 /* SRRecorderCell.m */; };
+		7362FAE011E41FA4002902E1 /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAD911E41FA4002902E1 /* SRRecorderControl.m */; };
+		7362FAE111E41FA4002902E1 /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FADB11E41FA4002902E1 /* SRValidator.m */; };
+		7362FAE411E42296002902E1 /* WKListEditorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362FAE311E42296002902E1 /* WKListEditorWindowController.m */; };
+		7362FAE811E424C0002902E1 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7362FAE711E424C0002902E1 /* Carbon.framework */; };
+		7382B28711F417E600057BB6 /* ListEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7382B28311F417E600057BB6 /* ListEditorView.xib */; };
+		7382B28811F417E600057BB6 /* ListEditorWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7382B28511F417E600057BB6 /* ListEditorWindow.xib */; };
+		73B0452F1205F23300CBB84F /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 73B0452E1205F23300CBB84F /* README.markdown */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* WhatKeysAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatKeysAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* WhatKeysAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatKeysAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* WhatKeys_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatKeys_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7362FAA611E41BC6002902E1 /* WKHotKeyAssignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHotKeyAssignment.h; sourceTree = "<group>"; };
+		7362FAA711E41BC6002902E1 /* WKHotKeyAssignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHotKeyAssignment.m; sourceTree = "<group>"; };
+		7362FAB211E41DA1002902E1 /* WKListEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKListEditorViewController.h; sourceTree = "<group>"; };
+		7362FAB311E41DA1002902E1 /* WKListEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKListEditorViewController.m; sourceTree = "<group>"; };
+		7362FACB11E41F9E002902E1 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		7362FACC11E41F9E002902E1 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		7362FACD11E41F9E002902E1 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		7362FAD111E41FA4002902E1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		7362FAD211E41FA4002902E1 /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		7362FAD311E41FA4002902E1 /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		7362FAD411E41FA4002902E1 /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		7362FAD511E41FA4002902E1 /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		7362FAD611E41FA4002902E1 /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		7362FAD711E41FA4002902E1 /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		7362FAD811E41FA4002902E1 /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		7362FAD911E41FA4002902E1 /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		7362FADA11E41FA4002902E1 /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		7362FADB11E41FA4002902E1 /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		7362FAE211E42296002902E1 /* WKListEditorWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKListEditorWindowController.h; sourceTree = "<group>"; };
+		7362FAE311E42296002902E1 /* WKListEditorWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKListEditorWindowController.m; sourceTree = "<group>"; };
+		7362FAE711E424C0002902E1 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		7382B28411F417E600057BB6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ListEditorView.xib; sourceTree = "<group>"; };
+		7382B28611F417E600057BB6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ListEditorWindow.xib; sourceTree = "<group>"; };
+		73B0452E1205F23300CBB84F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* WhatKeys-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WhatKeys-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* WhatKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7362FAE811E424C0002902E1 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7362FACA11E41F9E002902E1 /* DDHotKey */,
+				7362FAD011E41FA4002902E1 /* ShortcutRecorder */,
+				256AC3D80F4B6AC300CF3369 /* WhatKeysAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* WhatKeysAppDelegate.m */,
+				7362FAA611E41BC6002902E1 /* WKHotKeyAssignment.h */,
+				7362FAA711E41BC6002902E1 /* WKHotKeyAssignment.m */,
+				7362FAE211E42296002902E1 /* WKListEditorWindowController.h */,
+				7362FAE311E42296002902E1 /* WKListEditorWindowController.m */,
+				7362FAB211E41DA1002902E1 /* WKListEditorViewController.h */,
+				7362FAB311E41DA1002902E1 /* WKListEditorViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				7362FAE711E424C0002902E1 /* Carbon.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* WhatKeys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* WhatKeys */ = {
+			isa = PBXGroup;
+			children = (
+				73B0452E1205F23300CBB84F /* README.markdown */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = WhatKeys;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* WhatKeys_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* WhatKeys-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				7382B28511F417E600057BB6 /* ListEditorWindow.xib */,
+				7382B28311F417E600057BB6 /* ListEditorView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7362FACA11E41F9E002902E1 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				7362FACB11E41F9E002902E1 /* DDHotKeyCenter.h */,
+				7362FACC11E41F9E002902E1 /* DDHotKeyCenter.m */,
+				7362FACD11E41F9E002902E1 /* README.markdown */,
+			);
+			path = DDHotKey;
+			sourceTree = "<group>";
+		};
+		7362FAD011E41FA4002902E1 /* ShortcutRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				7362FAD111E41FA4002902E1 /* LICENSE.txt */,
+				7362FAD211E41FA4002902E1 /* SRCommon.h */,
+				7362FAD311E41FA4002902E1 /* SRCommon.m */,
+				7362FAD411E41FA4002902E1 /* SRKeyCodeTransformer.h */,
+				7362FAD511E41FA4002902E1 /* SRKeyCodeTransformer.m */,
+				7362FAD611E41FA4002902E1 /* SRRecorderCell.h */,
+				7362FAD711E41FA4002902E1 /* SRRecorderCell.m */,
+				7362FAD811E41FA4002902E1 /* SRRecorderControl.h */,
+				7362FAD911E41FA4002902E1 /* SRRecorderControl.m */,
+				7362FADA11E41FA4002902E1 /* SRValidator.h */,
+				7362FADB11E41FA4002902E1 /* SRValidator.m */,
+			);
+			path = ShortcutRecorder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* WhatKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WhatKeys" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatKeys;
+			productInstallPath = "$(HOME)/Applications";
+			productName = WhatKeys;
+			productReference = 8D1107320486CEB800E47090 /* WhatKeys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhatKeys" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* WhatKeys */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* WhatKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				7362FACF11E41F9E002902E1 /* README.markdown in Resources */,
+				7362FADC11E41FA4002902E1 /* LICENSE.txt in Resources */,
+				7382B28711F417E600057BB6 /* ListEditorView.xib in Resources */,
+				7382B28811F417E600057BB6 /* ListEditorWindow.xib in Resources */,
+				73B0452F1205F23300CBB84F /* README.markdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* WhatKeysAppDelegate.m in Sources */,
+				7362FAA811E41BC6002902E1 /* WKHotKeyAssignment.m in Sources */,
+				7362FAB411E41DA1002902E1 /* WKListEditorViewController.m in Sources */,
+				7362FACE11E41F9E002902E1 /* DDHotKeyCenter.m in Sources */,
+				7362FADD11E41FA4002902E1 /* SRCommon.m in Sources */,
+				7362FADE11E41FA4002902E1 /* SRKeyCodeTransformer.m in Sources */,
+				7362FADF11E41FA4002902E1 /* SRRecorderCell.m in Sources */,
+				7362FAE011E41FA4002902E1 /* SRRecorderControl.m in Sources */,
+				7362FAE111E41FA4002902E1 /* SRValidator.m in Sources */,
+				7362FAE411E42296002902E1 /* WKListEditorWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7382B28311F417E600057BB6 /* ListEditorView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7382B28411F417E600057BB6 /* English */,
+			);
+			name = ListEditorView.xib;
+			sourceTree = "<group>";
+		};
+		7382B28511F417E600057BB6 /* ListEditorWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7382B28611F417E600057BB6 /* English */,
+			);
+			name = ListEditorWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WhatKeys_Prefix.pch;
+				INFOPLIST_FILE = "WhatKeys-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = WhatKeys;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WhatKeys_Prefix.pch;
+				INFOPLIST_FILE = "WhatKeys-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = WhatKeys;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WhatKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhatKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
