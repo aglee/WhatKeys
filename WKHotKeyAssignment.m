@@ -14,7 +14,10 @@
 // Objective-C does not have true private methods.  Using a category in the .m like this is
 // a convention for helping us treat methods _as if_ they were private, by not exposing them
 // in the header.
-@interface WKHotKeyAssignment (Private)
+@interface WKHotKeyAssignment ()
+
+@property (readwrite, retain)	NSAppleScript *	compiledAppleScript;
+
 - (NSError *)_errorWithMessage:(NSString *)errorMessage;
 - (NSError *)_performPathAction;
 - (NSError *)_performEmbeddedScriptAction;
@@ -23,7 +26,7 @@
 
 @implementation WKHotKeyAssignment
 
-@synthesize name, keyCode, keyFlags, actionType, pathToAppleScript, embeddedAppleScript;
+@synthesize name, keyCode, keyFlags, actionType, pathToAppleScript, embeddedAppleScript, compiledAppleScript;
 @dynamic keyComboDisplayString;
 
 
@@ -78,6 +81,12 @@
 		actionType = WKEmbeddedAppleScriptActionType;
 		pathToAppleScript = @"";
 		embeddedAppleScript = @"beep";
+		compiledAppleScript = nil;
+		
+		// Use KVO to observe values that should cause us to recompute compiledAppleScript.
+		[self addObserver:self forKeyPath:@"actionType" options:0 context:NULL];
+		[self addObserver:self forKeyPath:@"pathToAppleScript" options:0 context:NULL];
+		[self addObserver:self forKeyPath:@"embeddedAppleScript" options:0 context:NULL];
 	}
 	
 	return self;
@@ -85,9 +94,17 @@
 
 - (void)dealloc
 {
+	// Stop observing things by KVO, since the things we observe have weak references to us.
+	[self removeObserver:self forKeyPath:@"actionType"];
+	[self removeObserver:self forKeyPath:@"pathToAppleScript"];
+	[self removeObserver:self forKeyPath:@"embeddedAppleScript"];
+	
+	// Release ivars for which we have strong references.
 	[hotKeyCenter release];
 	[name release];
 	[pathToAppleScript release];
+	[embeddedAppleScript release];
+	[compiledAppleScript release];
 	
 	[super dealloc];
 }
@@ -206,6 +223,21 @@
 	return [NSSet setWithObjects:@"keyCode", @"keyFlags", nil];
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+	if ([keyPath isEqualToString:@"actionType"]
+		|| [keyPath isEqualToString:@"pathToAppleScript"]
+		|| [keyPath isEqualToString:@"embeddedAppleScript"])
+	{
+		// Force compiledAppleScript to be recreated.
+		[self setCompiledAppleScript:nil];
+	}
+	else
+	{
+		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+	}
+}
+
 
 #pragma mark -
 #pragma mark NSObject methods
@@ -295,16 +327,27 @@
 		return [self _errorWithMessage:[NSString stringWithFormat:@"Invalid script path: '%@'.", pathToAppleScript]];
 	}
 	
-	// Try to load the script.
-	NSDictionary *	errorDict = nil;
-	NSAppleScript *	script = [[[NSAppleScript alloc] initWithContentsOfURL:scriptURL error:&errorDict] autorelease];
-	if (script == nil)
+	// Try to load the script if we haven't already.
+	if (compiledAppleScript == nil)
 	{
-		return [self _errorWithDict:errorDict];
+		NSDictionary *	errorDict = nil;
+		NSAppleScript *	script = [[[NSAppleScript alloc] initWithContentsOfURL:scriptURL error:&errorDict] autorelease];
+		
+		if (script == nil)
+		{
+			return [self _errorWithDict:errorDict];
+		}
+		
+		if (![script compileAndReturnError:&errorDict])
+		{
+			return [self _errorWithDict:errorDict];
+		}
+		
+		[self setCompiledAppleScript:script];
 	}
 	
 	// Try to execute the script.
-	return [self _performAppleScript:script];
+	return [self _performAppleScript:compiledAppleScript];
 }
 
 - (NSError *)_performEmbeddedScriptAction
@@ -315,15 +358,27 @@
 		return [self _errorWithMessage:@"No script was specified."];
 	}
 	
-	// Try to load the script.
-	NSAppleScript *	script = [[[NSAppleScript alloc] initWithSource:embeddedAppleScript] autorelease];
-	if (script == nil)
+	// Try to load the script if we haven't already.
+	if (compiledAppleScript == nil)
 	{
-		return [self _errorWithMessage:@"There's a problem with the AppleScript code."];
+		NSDictionary *	errorDict = nil;
+		NSAppleScript *	script = [[[NSAppleScript alloc] initWithSource:embeddedAppleScript] autorelease];
+		
+		if (script == nil)
+		{
+			return [self _errorWithMessage:@"There's a problem with the AppleScript code."];
+		}
+		
+		if (![script compileAndReturnError:&errorDict])
+		{
+			return [self _errorWithDict:errorDict];
+		}
+		
+		[self setCompiledAppleScript:script];
 	}
 	
 	// Try to execute the script.
-	return [self _performAppleScript:script];
+	return [self _performAppleScript:compiledAppleScript];
 }
 
 

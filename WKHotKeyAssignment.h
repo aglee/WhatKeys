@@ -62,6 +62,9 @@ typedef enum {
 	WKHotKeyActionType	actionType;
 	NSString *			pathToAppleScript;  // Used if actionType is WKPathToAppleScriptActionType.
 	NSString *			embeddedAppleScript;  // Used if actionType is WKEmbeddedAppleScriptActionType.
+	
+	// Caches compiled AppleScript for performance.
+	NSAppleScript *		compiledAppleScript;
 }
 
 @property (readwrite, copy)		NSString *			name;
